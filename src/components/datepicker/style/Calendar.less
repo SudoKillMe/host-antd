@@ -3,6 +3,8 @@
   line-height: 34px;
   text-align: center;
   user-select: none;
+  background-color: @primary-color;
+  color: @normal-color;
   border-bottom: @border-width-base @border-style-base @border-color-split;
 
   a:hover {
@@ -16,7 +18,7 @@
     padding: 0 2px;
     font-weight: bold;
     display: inline-block;
-    color: @text-color;
+    color: @text-color-dark;
     line-height: 34px;
   }
 
@@ -37,7 +39,7 @@
   .@{calendar-prefix-cls}-next-year-btn {
     position: absolute;
     top: 0;
-    color: @text-color-secondary;
+    color: @text-color-dark;
     font-family: Arial, "Hiragino Sans GB", "Microsoft Yahei", "Microsoft Sans Serif", sans-serif;
     padding: 0 5px;
     font-size: 16px;
@@ -85,7 +87,8 @@
 .@{calendar-prefix-cls} {
   position: relative;
   outline: none;
-  width: 231px;
+  // width: 231px;
+  width: 251px;
   border: @border-width-base @border-style-base #fff;
   list-style: none;
   font-size: @font-size-base;
@@ -172,10 +175,10 @@
     display: block;
     margin: 0 auto;
     color: @text-color;
-    border-radius: @border-radius-sm;
-    width: 20px;
-    height: 20px;
-    line-height: 18px;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
     border: @border-width-base @border-style-base transparent;
     padding: 0;
     background: transparent;
